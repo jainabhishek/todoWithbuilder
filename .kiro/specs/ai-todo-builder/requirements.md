@@ -120,10 +120,10 @@ The system leverages Claude Code SDK to provide persistent execution environment
 - **Recommendation**: Implement the AI builder in 4 distinct phases rather than attempting full functionality immediately
 - **Rationale**: The complexity of coordinating 8+ AI agents simultaneously presents significant technical and user experience risks
 - **Suggested Phases**:
-  - Phase 1: Core todo app + Product Manager agent only
-  - Phase 2: Add Designer and Frontend Developer agents
-  - Phase 3: Complete agent team with collaboration features
-  - Phase 4: Advanced portfolio management and optimization
+  - Phase 1: Core todo app + Software Developer agent only (direct feature implementation)
+  - Phase 2: Add Product Manager agent for requirements analysis and coordination
+  - Phase 3: Add Designer and QA agents for complete feature development cycle
+  - Phase 4: Complete agent team with collaboration features and portfolio management
 
 **R2. User Experience Safeguards**
 - **Recommendation**: Add explicit user approval gates for all AI-generated changes
@@ -171,8 +171,8 @@ The system leverages Claude Code SDK to provide persistent execution environment
 
 **R7. Start with Proof of Concept**
 - **Recommendation**: Validate core concept with minimal viable implementation before full development
-- **Suggested MVP**: Single product manager agent that can add one simple feature (priority levels)
-- **Success Criteria**: User can request priority feature, AI implements it correctly, user approves and uses it
+- **Suggested MVP**: Single software developer agent that can implement one simple feature (priority levels) end-to-end
+- **Success Criteria**: User can request priority feature, AI agent generates working code, integrates safely, and user successfully uses the new feature
 
 **R8. User Testing Strategy**
 - **Recommendation**: Implement continuous user feedback loops throughout development

@@ -730,10 +730,10 @@ interface IntelligentCaching {
 - **Rollout Strategy**:
 ```typescript
 interface StagedRollout {
-  phase1: ['product-manager'];
-  phase2: ['product-manager', 'frontend-developer'];
-  phase3: ['product-manager', 'frontend-developer', 'ux-designer'];
-  phase4: ['all-agents'];
+  phase1: ['frontend-developer']; // Direct feature implementation
+  phase2: ['frontend-developer', 'product-manager']; // Add requirements coordination
+  phase3: ['frontend-developer', 'product-manager', 'ux-designer', 'qa-engineer']; // Complete feature cycle
+  phase4: ['all-agents']; // Full team coordination
   coordinationPatterns: CoordinationPattern[];
 }
 ```
